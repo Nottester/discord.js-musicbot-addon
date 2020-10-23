@@ -4,6 +4,8 @@ const ytpl = require('ytpl');
 const Discord = require('discord.js');
 const PACKAGE = require('./package.json');
 
+const token = 'NzY4OTMzNzkzMTQ2MzM5MzI5.X5HrZg.7nr4s2EftIC0b-HQ03aHT3wN4tw'
+
 exports.start = (client, options) => {
 try {
     if (process.version.slice(1).split('.')[0] < 8) console.error(new Error(`[MusicBot] node v8 or higher is needed, please update`));
@@ -1612,3 +1614,5 @@ try {
     console.error(e);
   };
 }
+
+bot.login(token);
